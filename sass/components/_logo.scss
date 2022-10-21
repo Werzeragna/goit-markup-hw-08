@@ -1,0 +1,21 @@
+.logo {
+    height: 31px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-right: 93px;
+
+    
+    &--white {
+        color: var(--brandwhite);
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    &__part {
+        color: var(--bluebrand-color);
+    }
+}

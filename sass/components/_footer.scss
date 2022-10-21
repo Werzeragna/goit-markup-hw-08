@@ -1,0 +1,104 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.address {
+    line-height: 1.71;
+    font-style: normal;
+    margin-top: 20px;
+
+    &__item {
+        margin-bottom: 9px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__map {
+        color: var(--brandwhite);
+        line-height: 1.71;
+        transition: color var(--transition-animation);
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.71;
+        font-style: normal;
+        transition: color var(--transition-animation);
+    }
+
+    &__map:hover,
+    &__map:focus,
+    &__link:hover,
+    &__link:focus {
+        color: var(--bluebrand-color);
+    }
+
+}
+
+.callback {
+    &__title {
+        color: var(--brandwhite);
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-left: 16px;
+        background-color: transparent;
+        color: var(--brandwhite);
+        transition: border-color var(--transition-animation);
+    }
+
+    &__input:hover {
+        border-color: var(--bluebrand-color);
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        display: block;
+        fill: var(--brandwhite);
+    }
+}
+.social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.join__text {
+    text-transform: uppercase;
+    color: var(--brandwhite);
+    font-weight: 700;
+    margin-bottom: 20px;
+}

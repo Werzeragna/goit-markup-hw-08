@@ -1,0 +1,30 @@
+.skills {
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__icon {
+        margin: 25px 100px;
+    }
+    &__wrap {
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: #f5f4fa;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.14;
+        color: var(--brand-color);
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 1.71;
+        color: var(--discription-color);
+    }
+}

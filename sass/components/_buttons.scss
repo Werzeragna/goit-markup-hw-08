@@ -1,0 +1,54 @@
+.button {
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--brandwhite);
+    border-radius: 4px;
+    background: var(--bluebrand-color);
+    height: 50px;
+
+    &--hero {
+        text-align: center;
+        padding: 10px 32px;
+        transition: background-color var(--transition-animation);
+    }
+        
+    &--hero:hover,
+    &--hero:focus,
+    &--hero:active {
+        background-color: #188ce8;
+        border: 0;
+    }
+
+    &--footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 28px;
+        gap: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &--footer:hover,
+    &--footer:focus,
+    &--footer:active {
+        background-color: #188ce8;
+        border: 0;
+    }
+
+    &--modal { 
+        margin-bottom: 30px;
+        padding: 10px 52px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        align-self: center;
+    }
+
+    &--modal:hover,
+    &--modal:focus,
+    &--modal:active {
+            background-color: #188ce8;
+            border: 0;
+        }
+}
