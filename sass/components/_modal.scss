@@ -22,12 +22,17 @@
     position: relative;
     margin: auto;
     padding: 40px;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--brandwhite);
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
+    }
 
     &__button {
         position: absolute;
@@ -61,11 +66,15 @@
     &__title {
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         letter-spacing: 0.03em;
         text-align: center;
         color: var(--brand-color);
         margin-bottom: 12px;
+
+        @media screen and (min-width:1200) {
+            line-height: 1.15;
+        }
     }
 
     &__item {
@@ -161,10 +170,15 @@
     }
 
     &__terms {
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
         color: var(--discription-color);
+
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__link {

@@ -22,15 +22,68 @@
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html"><span class="logo__part">Web</span>Studio</a>
-        <!--Навігаційне меню-->
+        <button class="navigation__menu-open" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./img/icons.svg#icon-menu_open"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <div class="container mob-menu__container">
+            <button class="navigation__menu-close" type="button" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./img/icons.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+            <div class="mob-menu--top">
+              <ul class="list mob-menu__list">
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="mob-menu__link current" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="mob-menu--bottom">
+              <ul class="list mob-menu__contacts">
+                <li class="mob-menu__tel">
+                  <a class="mob-menu__tellink" href="tel:+380961111111"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob-menu__mail">
+                  <a class="mob-menu__maillink" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-menu__soclist">
+                <li class="mob-menu__socitem">
+                  <a class="mob-menu__soclink" href="">Instagram</a>
+                </li>
+                <li class="mob-menu__socitem">
+                  <a class="mob-menu__soclink" href="">Twitter</a>
+                </li>
+                <li class="mob-menu__socitem">
+                  <a class="mob-menu__soclink" href="">Facebook</a>
+                </li>
+                <li class="mob-menu__socitem">
+                  <a class="mob-menu__soclink" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <nav class="navigation">
           <ul class="list navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="./index.html">Студія</a></li>
-            <li class="navigation__item"><a class="navigation__link current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li class="navigation__item"><a class="navigation__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <!--Контакти-->
         <ul class="list contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -256,8 +309,10 @@
     <!--Підвал сторінки-->
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a class="logo logo--white" href="./index.html"><span class="logo__part">Web</span>Studio</a>
+        <div class="footer__address-wrap">
+          <a class="logo logo--white" href="./index.html"
+            ><span class="logo__part">Web</span>Studio</a
+          >
           <address class="address">
             <ul class="list address__list">
               <li class="address__item">
@@ -336,5 +391,6 @@
       </div>
     </footer>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

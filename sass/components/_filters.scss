@@ -1,12 +1,15 @@
 .filters {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 8px 8px 50px 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 50px;
 
-    &__item {
-        margin-right: 10px;
+    @media screen and (min-width:768px) {
+        justify-content: center;
     }
+
 
     &__button {
         background-color: #f5f4fa;
@@ -20,9 +23,6 @@
             box-shadow var(--transition-animation);
     }
 
-    &__item:last-child {
-        margin-right: 0px;
-    }
 
     &__button:hover,
     &__button:focus,
