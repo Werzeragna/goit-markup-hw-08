@@ -62,11 +62,8 @@
         line-height: 1.14;
         color: var(--brand-color);
         padding-bottom: 10px;
-
-        @media screen and (min-width:480px) {
-            display: flex;
-            justify-content: center;
-        }
+        display: flex;
+        justify-content: center;
         
         @media screen and (min-width:768px) {
             justify-content: flex-start;

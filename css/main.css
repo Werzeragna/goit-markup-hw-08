@@ -443,6 +443,7 @@ body {
 }
 .filters__button {
   background-color: #f5f4fa;
+  color: var(--brand-color);
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -952,12 +953,8 @@ body {
   line-height: 1.14;
   color: var(--brand-color);
   padding-bottom: 10px;
-}
-@media screen and (min-width: 480px) {
-  .skills__title {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .skills__title {
