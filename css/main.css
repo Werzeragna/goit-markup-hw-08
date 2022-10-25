@@ -316,7 +316,7 @@ body {
   }
 }
 .mob-menu.is-hidden {
-  opacity: 0.6;
+  opacity: 0;
   transform: translateX(-100%);
   pointer-events: none;
   visibility: hidden;
@@ -528,6 +528,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__address-wrap {
     display: block;
+    margin-right: 70px;
   }
 }
 
@@ -645,6 +646,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .social-box {
+    margin-right: 93px;
     align-items: flex-start;
     justify-content: flex-start;
   }
